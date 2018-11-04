@@ -1,7 +1,7 @@
 {
   "name": "express-monolith",
   "description": "Run multiple webservices in a single Node process",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "keywords": [
     "SOA",
     "microservices",
