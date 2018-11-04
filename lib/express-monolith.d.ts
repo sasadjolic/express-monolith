@@ -2,10 +2,14 @@
 // Project: express-monolith
 // Definitions by: Sasa Djolic <https://www.linkedin.com/in/sasadjolic/>
 
+import * as http from "http"
 import * as express from 'express'
 
 export class Monolith {
     run(options: { app?: express.Application, port: number, bindings: Array<Binding> }): Promise<Monolith>
+
+    app: express.Application
+    server: http.Server
 }
 
 export class Service {
