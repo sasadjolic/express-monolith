@@ -5,7 +5,7 @@
 import * as express from 'express'
 
 export class Monolith {
-    run(options: { app?: express.Application, port: number, bindings: Array<Binding> }): Promise<void>
+    run(options: { app?: express.Application, port: number, bindings: Array<Binding> }): Promise<Monolith>
 }
 
 export class Service {
