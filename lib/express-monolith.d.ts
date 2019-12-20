@@ -6,7 +6,7 @@ import * as http from "http"
 import * as express from 'express'
 
 export class Monolith {
-    run(options: { app?: express.Application, port: number, bindings: Array<Binding> }): Promise<Monolith>
+    run(options: { app?: express.Application, port: number, bindings: Array<Binding>, quiet?: boolean }): Promise<Monolith>
 
     app: express.Application
     server: http.Server
